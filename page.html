@@ -4,12 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1 {font-family: "Raleway", Arial, sans-serif}
+        h1 {letter-spacing: 6px}
+        .w3-row-padding img {margin-bottom: 12px}
+    </style>
 </head>
 <body>
-    <center>
+    <div class="w3-content" style="max-width:1500px"></div>
+
+    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+        <h1 class="w3-xlarge">Testing testing... </h1>
+        <h1>C H A T R O O O O M</h1>
+        
+        <div class="w3-padding-32">
+          <div class="w3-bar w3-border">
+            <button onclick="yhteystiedot()" class="w3-bar-item w3-button w3-light-grey">Yhteystiedot</a></button>
+            <button onclick="palvelut()" class="w3-bar-item w3-button w3-light-grey">Palvelumme</a></button>
+            <button onclick="henkilosto()" class="w3-bar-item w3-button w3-light-grey">Henkilöstö</a></button>
+            <button onclick="avaaChat()" class="w3-bar-item w3-button w3-light-grey">Chat</a></button>
+            <div id="sisältö"></div>
+
+          </div>
+        </div>
+      </header>
+      
+    <!-- <center>
         Otsikko
         <br><br>
-        <a href="/chat.html">Asiakaspalvelu Chat</a>
-    </center>
+        <button onclick="avaaChat()">Chat</button>
+        <button onclick="yhteystiedot()">Yhteystiedot</button>
+        <button onclick="palvelut()">Palvelumme</button>
+        <button onclick="henkilosto()">Henkilöstö</button>
+
+        <div id="sisältö"></div>
+    </center> -->
+
+
+
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+        
+        <a href="https://www.facebook.com" target="_blank" class="w3-hover-opacity">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <br/>
+        <a href="https://www.youtube.com" target="_blank" class="w3-hover-opacity">
+            <i class="fa fa-youtube"></i>
+        </a>
+        <br/>
+        <a href="https://www.twitter.com" target="_blank" class="w3-hover-opacity">
+            <i class="fa fa-twitter"></i>
+        </a>
+
+        <p>© Ossi W. - 2024</p>
+      </footer>
+
+
+
+    <script src="./page.js"></script>
+    <script>
+        function avaaChat() {
+            window.location.href = "/chat.html";
+        }
+
+        
+    </script>
 </body>
 </html>

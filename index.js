@@ -8,6 +8,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 
+
 // Tässä ei nyt käytetäkään express staticia vaan lähetetään html manuaalisesti
 app.get('/', (req, res) => {
   res.sendFile(join(__dirname, 'page.html'));
@@ -22,6 +23,14 @@ app.get('/style.css', (req, res) => {
     res.sendFile(join(__dirname, 'style.css'));
   });
 
+app.get('/page.js', (req, res) => {
+    res.sendFile(join(__dirname, 'page.js'));
+  });
+
+
+app.get('/henkilosto.json', (req, res) => {
+    res.sendFile(join(__dirname, 'henkilosto.json'));
+  });
 
 io.on('connection', (socket) => {
 
@@ -34,3 +43,4 @@ socket.on('chat message', (msg) => {
 server.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
 });
+
